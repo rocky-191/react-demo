@@ -4,6 +4,7 @@ import './App.css';
 import {Menu} from 'antd';
 import Comment from './example/commentExample/Comment';
 import Tab from './example/tabExample/Tab';
+import Clock from "./example/clockExample/Clock"
 
 class App extends React.Component {
   handleClick = e => {
@@ -18,6 +19,10 @@ class App extends React.Component {
       {
         text:"tab实例",
         compName:"Tab"
+      },
+      {
+        text:"钟表实例",
+        compName:"Clock"
       }
     ]
     return (
@@ -37,8 +42,9 @@ class App extends React.Component {
               </Menu.Item>)
           })}
         </Menu>
-          <Route path="/" exact component={Comment}></Route>
+          <Route path="/Comment" component={Comment}></Route>
           <Route path="/Tab" component={Tab}></Route>
+          <Route path="/Clock" component={Clock}></Route>
           </div>
         </BrowserRouter>
       </div>

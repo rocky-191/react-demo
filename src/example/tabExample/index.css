@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.tab-selector ul li{
+    width: 100px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: #f6f6f6;
+    color: #666666;
+    cursor: pointer;
+}

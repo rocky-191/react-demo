@@ -3,7 +3,7 @@ import { BrowserRouter,Route,NavLink } from 'react-router-dom'
 import './App.css';
 import {Menu} from 'antd';
 import Comment from './example/commentExample/Comment';
-import Tab from './example/tabExample/Tab';
+import {Tab} from './example/tabExample/Tab';
 import Clock from "./example/clockExample/Clock"
 
 class App extends React.Component {

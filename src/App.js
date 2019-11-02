@@ -6,6 +6,8 @@ import Comment from './example/commentExample/Comment';
 import {Tab} from './example/tabExample/Tab';
 import Clock from "./example/clockExample/Clock";
 import LocalSample from "./example/languageExample/LocalSample";
+import PureRedux from "./example/purereduxExample/PureRedux"
+import ReduxCounter from "./example/reduxcounter/ReduxCounter"
 
 const { Sider, Content } = Layout;
 class App extends React.Component {
@@ -26,6 +28,14 @@ class App extends React.Component {
       {
         text:"语言切换实例",
         compName:"LocalSample"
+      },
+      {
+        text:"PureRedux实例",
+        compName:"PureRedux"
+      },
+      {
+        text:"ReduxCounter实例",
+        compName:"ReduxCounter"
       }
     ]
     return (
@@ -48,10 +58,12 @@ class App extends React.Component {
         </Menu>
           </Sider>
           <Content>
-          <Route path="/Comment" component={Comment}></Route>
-          <Route path="/Tab" component={Tab}></Route>
-          <Route path="/Clock" component={Clock}></Route>
-          <Route path="/LocalSample" component={LocalSample}></Route>
+            <Route path="/Comment" component={Comment}></Route>
+            <Route path="/Tab" component={Tab}></Route>
+            <Route path="/Clock" component={Clock}></Route>
+            <Route path="/LocalSample" component={LocalSample}></Route>
+            <Route path="/PureRedux" component={PureRedux}></Route>
+            <Route path="/ReduxCounter" component={ReduxCounter}></Route>
           </Content>
         </Layout>
         </BrowserRouter>

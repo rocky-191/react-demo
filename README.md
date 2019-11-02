@@ -16,3 +16,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - tab切换实例
 - 钟表实例
 - 语言切换实例
+- redux单独使用实例
+- react中使用redux实例

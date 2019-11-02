@@ -1,16 +1,14 @@
 import React from 'react';
 import { BrowserRouter,Route,NavLink } from 'react-router-dom'
 import './App.css';
-import {Menu} from 'antd';
+import {Menu,Layout} from 'antd';
 import Comment from './example/commentExample/Comment';
 import {Tab} from './example/tabExample/Tab';
 import Clock from "./example/clockExample/Clock";
 import LocalSample from "./example/languageExample/LocalSample";
 
+const { Sider, Content } = Layout;
 class App extends React.Component {
-  handleClick = e => {
-    console.log ('click ', e);
-  };
   render () {
     const menus=[
       {
@@ -33,8 +31,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <div>
-        <Menu
+        <Layout>
+          <Sider width={260}>
+          <Menu
           onClick={this.handleClick}
           style={{width: 256}}
           defaultSelectedKeys={['Comment']}
@@ -47,11 +46,14 @@ class App extends React.Component {
               </Menu.Item>)
           })}
         </Menu>
+          </Sider>
+          <Content>
           <Route path="/Comment" component={Comment}></Route>
           <Route path="/Tab" component={Tab}></Route>
           <Route path="/Clock" component={Clock}></Route>
           <Route path="/LocalSample" component={LocalSample}></Route>
-          </div>
+          </Content>
+        </Layout>
         </BrowserRouter>
       </div>
     );

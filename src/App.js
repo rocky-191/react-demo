@@ -4,7 +4,8 @@ import './App.css';
 import {Menu} from 'antd';
 import Comment from './example/commentExample/Comment';
 import {Tab} from './example/tabExample/Tab';
-import Clock from "./example/clockExample/Clock"
+import Clock from "./example/clockExample/Clock";
+import LocalSample from "./example/languageExample/LocalSample";
 
 class App extends React.Component {
   handleClick = e => {
@@ -23,6 +24,10 @@ class App extends React.Component {
       {
         text:"钟表实例",
         compName:"Clock"
+      },
+      {
+        text:"语言切换实例",
+        compName:"LocalSample"
       }
     ]
     return (
@@ -45,6 +50,7 @@ class App extends React.Component {
           <Route path="/Comment" component={Comment}></Route>
           <Route path="/Tab" component={Tab}></Route>
           <Route path="/Clock" component={Clock}></Route>
+          <Route path="/LocalSample" component={LocalSample}></Route>
           </div>
         </BrowserRouter>
       </div>

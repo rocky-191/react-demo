@@ -8,6 +8,7 @@ import Clock from './example/clockExample/Clock';
 import LocalSample from './example/languageExample/LocalSample';
 import PureRedux from './example/purereduxExample/PureRedux';
 import ReduxCounter from './example/reduxcounter/ReduxCounter';
+import Hook from "./example/hookExample/Hook"
 
 const {Sider, Content} = Layout;
 class App extends React.Component {
@@ -44,6 +45,11 @@ class App extends React.Component {
         compName: 'ReduxCounter',
         component:ReduxCounter
       },
+      {
+        text:"hook实例",
+        compName:"Hook",
+        component:Hook
+      }
     ];
     return (
       <div className="App">

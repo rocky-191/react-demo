@@ -9,6 +9,7 @@ import LocalSample from './example/languageExample/LocalSample';
 import PureRedux from './example/purereduxExample/PureRedux';
 import ReduxCounter from './example/reduxcounter/ReduxCounter';
 import Hook from "./example/hookExample/Hook"
+import HooksTodo from './example/hooks-todo/index.tsx'
 
 const {Sider, Content} = Layout;
 class App extends React.Component {
@@ -49,6 +50,11 @@ class App extends React.Component {
         text:"hook实例",
         compName:"Hook",
         component:Hook
+      },
+      {
+        text:'hooks todo实例',
+        compName:'HooksTodo',
+        component:HooksTodo
       }
     ];
     return (

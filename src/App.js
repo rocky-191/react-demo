@@ -10,6 +10,7 @@ import PureRedux from './example/purereduxExample/PureRedux';
 import ReduxCounter from './example/reduxcounter/ReduxCounter';
 import Hook from "./example/hookExample/Hook"
 import HooksTodo from './example/hooks-todo/index.tsx'
+import DynamicForm from './example/dynamicForm/index.js'
 
 const {Sider, Content} = Layout;
 class App extends React.Component {
@@ -55,6 +56,11 @@ class App extends React.Component {
         text:'hooks todo实例',
         compName:'HooksTodo',
         component:HooksTodo
+      },
+      {
+        text:'动态表单',
+        compName:'DynamicForm',
+        component:DynamicForm
       }
     ];
     return (
